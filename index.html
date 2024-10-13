@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Fotografías</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Foto inicial -->
+    <header>
+        <img src="fotos/imagen-principal.jpg" alt="Foto Principal" class="main-photo">
+    </header>
+
+    <!-- Título principal -->
+    <section class="title-section">
+        <h1>Análisis de Fotografías de Jesús Abad Colorado en el Marco del Conflicto Armado Colombiano en los 90's</h1>
+        <p>Elaborado por Vivian Juliana Salas</p>
+    </section>
+
+    <!-- Descripción y foto del fotógrafo -->
+    <section class="photographer-section">
+        <div class="photographer-info">
+            <p>Jesús Abad Colorado López es un fotorreportero que nació en Medellín Antioquia el 22 de abril de 1967. Su carrera como fotógrafo se ha centrado en retratar las diferentes caras del conflicto armado colombiano, retratando las consecuencias de los actores armados hacia la población civil, mostrando el dolor y desgracias, pero también la fuerza y resistencia de la población colombiana.</p>
+        </div>
+        <div class="photographer-photo">
+            <img src="fotos/foto-fotografo.jpg" alt="Foto del fotógrafo">
+        </div>
+    </section>
+
+    <!-- Título para la sección de análisis -->
+    <section class="gallery-title">
+        <h2>Análisis de las Fotografías</h2>
+    </section>
+
+    <!-- Galería de fotos con el marco -->
+    <section class="gallery">
+        <div class="gallery-grid">
+            <div class="image-container" data-title="Foto 1" data-description="Descripción de la Foto 1" data-ref="Referencia 1">
+                <img src="fotos/foto1.jpg" alt="Foto 1">
+            </div>
+            <div class="image-container" data-title="Foto 2" data-description="Descripción de la Foto 2" data-ref="Referencia 2">
+                <img src="fotos/foto2.jpg" alt="Foto 2">
+            </div>
+            <div class="image-container" data-title="Foto 3" data-description="Descripción de la Foto 3" data-ref="Referencia 3">
+                <img src="fotos/foto3.jpg" alt="Foto 3">
+            </div>
+            <div class="image-container" data-title="Foto 4" data-description="Descripción de la Foto 4" data-ref="Referencia 4">
+                <img src="fotos/foto4.jpg" alt="Foto 4">
+            </div>
+            <div class="image-container" data-title="Foto 5" data-description="Descripción de la Foto 5" data-ref="Referencia 5">
+                <img src="fotos/foto5.jpg" alt="Foto 5">
+            </div>
+            <div class="image-container" data-title="Foto 6" data-description="Descripción de la Foto 6" data-ref="Referencia 6">
+                <img src="fotos/foto6.jpg" alt="Foto 6">
+            </div>
+            <div class="image-container" data-title="Foto 7" data-description="Descripción de la Foto 7" data-ref="Referencia 7">
+                <img src="fotos/foto7.jpg" alt="Foto 7">
+            </div>
+            <div class="image-container" data-title="Foto 8" data-description="Descripción de la Foto 8" data-ref="Referencia 8">
+                <img src="fotos/foto8.jpg" alt="Foto 8">
+            </div>
+            <div class="image-container" data-title="Foto 9" data-description="Descripción de la Foto 9" data-ref="Referencia 9">
+                <img src="fotos/foto9.jpg" alt="Foto 9">
+            </div>
+            <div class="image-container" data-title="Foto 10" data-description="Descripción de la Foto 10" data-ref="Referencia 10">
+                <img src="fotos/foto10.jpg" alt="Foto 10">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-text">
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+                <p><strong>Referencia:</strong> <span id="modal-ref"></span></p>
+            </div>
+            <img id="modal-image" src="" alt="" class="modal-image">
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
