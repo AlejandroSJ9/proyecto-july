@@ -47,7 +47,6 @@ header {
     line-height: 1.6;
     margin-right: 10px; /* Reducimos el margen derecho para acercar más la imagen */
 }
-  
 
 .photographer-photo img {
     width: 300px;
@@ -108,7 +107,8 @@ header {
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    padding: 20px; /* Añadimos padding para ajustar el contenido */
+    overflow-y: auto; /* Habilitar la barra de desplazamiento si el contenido es largo */
 }
 
 .modal-content {
@@ -120,13 +120,11 @@ header {
     border-radius: 10px;
     max-width: 80%;
     width: 80%;
+    max-height: 90vh; /* Limitar la altura del modal al 90% del viewport */
+    overflow-y: auto; /* Habilitar la barra de desplazamiento si el contenido es largo */
 }
 
-.modal-text {
-    max-width: 40%;
-    text-align: justify; /* Justifica el texto */
-}
-
+/* Aseguramos que la imagen del modal también se ajuste */
 .modal-image {
     max-width: 50%;
     height: auto;
@@ -142,8 +140,6 @@ header {
 }
 
 /* Estilos responsivos */
-
-
 @media (max-width: 768px) {
     .photographer-section {
         flex-direction: column;
