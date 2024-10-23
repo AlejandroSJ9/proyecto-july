@@ -34,21 +34,27 @@ header {
 /* Sección del fotógrafo */
 .photographer-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centramos el contenido */
     align-items: center;
     padding: 20px;
+    max-width: 80%; /* Limitamos el ancho total de la sección para que no ocupe toda la pantalla */
+    margin: 0 auto; /* Centramos la sección en la página */
 }
 
 .photographer-info {
-    flex: 1;
-    padding-right: 20px;
+    font-size: 1.7rem;
+    text-align: justify;
+    line-height: 1.6;
+    margin-right: 10px; /* Reducimos el margen derecho para acercar más la imagen */
 }
+  
 
 .photographer-photo img {
     width: 300px;
     height: auto;
     object-fit: cover;
     border: 3px solid #fff;
+    margin-left: 20px; /* Reducimos la separación entre el texto y la imagen */
 }
 
 .photographer-section p {
@@ -136,6 +142,8 @@ header {
 }
 
 /* Estilos responsivos */
+
+
 @media (max-width: 768px) {
     .photographer-section {
         flex-direction: column;
