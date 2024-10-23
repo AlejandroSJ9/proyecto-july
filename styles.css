@@ -118,6 +118,7 @@ header {
 
 .modal-text {
     max-width: 40%;
+    text-align: justify; /* Justifica el texto */
 }
 
 .modal-image {
